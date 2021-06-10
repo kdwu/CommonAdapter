@@ -1,8 +1,3 @@
----
-theme: condensed-night-purple
-highlight: tomorrow-night
----
-
 # 传统的适配器
 在 Android 项目中，基本上都会有列表功能，而现在的列表功能都是通过 RecyclerView 实现的，当项目中列表功能比较多的时候，每一个 RecyclerView 都需要一个 Adapter 适配器，这样会使得项目中的 Adapter 类非常的多。所以，封装一个万能的 RecyclerView 适配器是可以提高我们的开发效率的。在这之前，我们先来看一下传统适配器配合 RecyclerView 是怎样使用的。
 
