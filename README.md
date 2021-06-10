@@ -7,6 +7,7 @@ highlight: tomorrow-night
 在 Android 项目中，基本上都会有列表功能，而现在的列表功能都是通过 RecyclerView 实现的，当项目中列表功能比较多的时候，每一个 RecyclerView 都需要一个 Adapter 适配器，这样会使得项目中的 Adapter 类非常的多。所以，封装一个万能的 RecyclerView 适配器是可以提高我们的开发效率的。在这之前，我们先来看一下传统适配器配合 RecyclerView 是怎样使用的。
 
 我们先来看一下我们要实现的例子的样子，如下所示：
+
 ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f51dd545cdb0481eab39b5b9d0e20d1c~tplv-k3u1fbpfcp-watermark.image)
 
 适配器 Adapter 的代码如下所示：
@@ -324,6 +325,3 @@ mCommonAdapter = new CommonAdapter<>(mList, new CommonAdapter.OnBindDataListener
 mRecyclerView.setAdapter(mCommonAdapter);
 ```
 这个使用是非常简单的，通过 getLayoutId() 传入 Item 的布局，通过 onBindViewHolder() 方法设置数据。以后我们项目中 RecyclerView 的适配器只需要上述两个类就可以了。
-
-# 源码
-
